@@ -1,0 +1,7 @@
+v 4
+file . "recognizer_tb.vhd" "3ac5c4ca06c73c94a65d2bcee532e90d711e5888" "20250313092151.315":
+  entity recognizer_tb at 1( 0) + 0 on 13;
+  architecture simple of recognizer_tb at 7( 94) + 0 on 14;
+file . "recognizer.vhd" "4bd3b680cca399d5b61fe0e2ba8bb1e82500356f" "20250313092151.213":
+  entity recognizer at 3( 16) + 0 on 11;
+  architecture behavioral of recognizer at 15( 368) + 0 on 12;
