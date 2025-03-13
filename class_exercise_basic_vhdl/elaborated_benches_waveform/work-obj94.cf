@@ -1,7 +1,0 @@
-v 4
-file . "serializer_tb.vhd" "c3f2f79272583e63938a24c3d79b6076f9ff5721" "20250313092407.582":
-  entity serializer_tb at 2( 17) + 0 on 13;
-  architecture simple of serializer_tb at 7( 109) + 0 on 14;
-file . "serializer.vhd" "e190e7645c35f0f87a070d9f1994f2d7753fdf90" "20250313092407.509":
-  entity serializer at 3( 16) + 0 on 11;
-  architecture behavioral of serializer at 16( 417) + 0 on 12;

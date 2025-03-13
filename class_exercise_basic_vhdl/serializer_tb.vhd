@@ -17,5 +17,5 @@ architecture simple of serializer_tb is
     clk <= not clk after 10 ns;
     reset<= '0';
     start<= '0', '1' after 40 ns, '0' after 60 ns;
-    data_in<= "0000", "0001" after  50 ns, "0011" after 70 ns, "1011" after 110 ns, "0000" after 130 ns;
+    data_in<= "0000", "1011" after  50 ns, "0000" after 150 ns;
 end simple;
