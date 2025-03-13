@@ -1,0 +1,44 @@
+how to compile and run tests:
+ ghdl -a "resource_file.vhd" [OPTIONAL] "testbench_file.vhd"
+ [OPTIONAL] ghdl -e "testbench_name" (no .vhd)
+ ghdl -r "testbench_name" (no .vhd) --vcd="choose_file_name.vcd" [OPTIONAL] --stop-time=(choose time)
+ gtkwave "choose_file_name.vcd"
+
+
+Things to remember when doing the testbench_file:
+
+    define the signals that you want to test and the clock signal.
+
+    when I want to assign a vector:
+
+        if I defined the vector as "vec : in STD_LOGIC_VECTOR(n downto 0)" 
+        then to assign the first element (index = 0) -> vec <= "XXX1". where X is an Unknown value.
+
+    when I want to test the outputs:
+
+        1. assign the inputs (always remember the rising_edge()!!).
+        2. wait for a few clock cycles.
+        3. check the outputs.
+
+end of things to remember;
+
+Things to remember when doing the resource_file:
+
+    define always three processes:
+
+        1. To switch from present_state to next_state for every clock cycle.
+        2. To follow the state machine transitions.
+        3. To assign the outputs based on the present_state.
+
+    when I want to access a vector:
+
+        if I defined the vector as "vec : in STD_LOGIC_VECTOR(n downto 0)" then to access the first element (index = 0 )-> vec(3).
+
+        when I'm assigning outputs:
+
+            1. always assing the output at the beginning of the process.
+            2. then use the case statement to assign the output based on the present_state (with a default assignment and not just inside an if).
+
+
+
+
