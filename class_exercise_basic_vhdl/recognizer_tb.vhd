@@ -9,7 +9,7 @@ architecture simple of recognizer_tb is
     signal reset : std_logic := '0';
     signal busy : std_logic := '0';
     signal start : std_logic := '0';
-    signal command : std_logic_vector(3 downto 0) := (others => 'X');
+    signal command : std_logic_vector(3 downto 0) := (others => '0');
     
 begin
     g1: entity work.recognizer 
@@ -17,8 +17,7 @@ begin
     clk <= not clk after 10 ns;
  
     reset <= '0';
-    command <= "XXX1" after 30 ns,"XX11" after 50 ns, "X011" after 70 ns, 
-               "1011" after 90 ns,"0000" after 110 ns;
+    command <= "1011" after 30 ns,"0000" after 110 ns;
     busy <= '0', '1' after 30 ns, '0' after 90 ns;
     
 end simple;

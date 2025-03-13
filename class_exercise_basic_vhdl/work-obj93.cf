@@ -1,0 +1,16 @@
+v 4
+file . "top_tb.vhd" "7116ec6765e76c3a6e527f0454f878d10e7f6857" "20250313184502.823":
+  entity top_tb at 1( 0) + 0 on 19;
+  architecture integration of top_tb at 7( 80) + 0 on 20;
+file . "serializer.vhd" "e190e7645c35f0f87a070d9f1994f2d7753fdf90" "20250313184440.011":
+  entity serializer at 3( 16) + 0 on 15;
+  architecture behavioral of serializer at 16( 417) + 0 on 16;
+file . "recognizer.vhd" "4bd3b680cca399d5b61fe0e2ba8bb1e82500356f" "20250313183632.757":
+  entity recognizer at 3( 16) + 0 on 11;
+  architecture behavioral of recognizer at 15( 368) + 0 on 12;
+file . "recognizer_tb.vhd" "ba8acbc4f4e188d27db81661cf063dc380ce4850" "20250313183632.851":
+  entity recognizer_tb at 1( 0) + 0 on 13;
+  architecture simple of recognizer_tb at 7( 94) + 0 on 14;
+file . "top.vhd" "60da2514b5c759f33872a65340eaa2d5107d8d90" "20250313184502.774":
+  entity top at 1( 0) + 0 on 17;
+  architecture structural of top at 14( 349) + 0 on 18;

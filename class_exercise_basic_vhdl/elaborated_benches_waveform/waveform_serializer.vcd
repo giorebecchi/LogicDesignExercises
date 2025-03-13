@@ -1,5 +1,5 @@
 $date
-  Thu Mar 13 19:40:10 2025
+  Thu Mar 13 19:41:36 2025
 $end
 $version
   GHDL v0
@@ -11,18 +11,20 @@ $scope module standard $end
 $upscope $end
 $scope module std_logic_1164 $end
 $upscope $end
-$scope module recognizer_tb $end
+$scope module serializer_tb $end
 $var reg 1 ! clk $end
 $var reg 1 " reset $end
-$var reg 1 # busy $end
-$var reg 1 $ start $end
-$var reg 4 % command[3:0] $end
+$var reg 1 # start $end
+$var reg 4 $ data_in[3:0] $end
+$var reg 1 % busy $end
+$var reg 1 & serial_out $end
 $scope module g1 $end
-$var reg 1 & clk $end
-$var reg 1 ' reset $end
-$var reg 4 ( command[3:0] $end
-$var reg 1 ) busy $end
-$var reg 1 * start $end
+$var reg 1 ' clk $end
+$var reg 1 ( reset $end
+$var reg 1 ) start $end
+$var reg 4 * data_in[3:0] $end
+$var reg 1 + busy $end
+$var reg 1 , serial_out $end
 $comment present_state is not handled $end
 $comment next_state is not handled $end
 $upscope $end
@@ -32,97 +34,116 @@ $enddefinitions $end
 0!
 0"
 0#
-0$
-b0000 %
+b0000 $
+0%
 0&
 0'
-b0000 (
+0(
 0)
-0*
+b0000 *
+0+
+0,
 #10000000
 1!
-1&
+1'
 #20000000
 0!
-0&
+0'
 #30000000
 1!
-1#
-b1011 %
-1&
-b1011 (
-1)
+1'
 #40000000
 0!
-0&
+1#
+1%
+1&
+0'
+1)
+1+
+1,
 #50000000
 1!
-1&
+b1011 $
+1'
+b1011 *
+1+
+1,
 #60000000
 0!
-0&
+0#
+0'
+0)
+1+
+1,
 #70000000
 1!
-1&
+1'
+1+
+1,
 #80000000
 0!
-0&
+0'
 #90000000
 1!
-0#
-1$
-1&
-0)
-1*
+0&
+1'
+1+
+0,
 #100000000
 0!
-0&
+0'
 #110000000
 1!
-0$
-b0000 %
 1&
-b0000 (
-0*
+1'
+1+
+1,
 #120000000
 0!
-0&
+0'
 #130000000
 1!
-1&
+0&
+1'
+1+
+0,
 #140000000
 0!
-0&
+0'
 #150000000
 1!
-1&
+b0000 $
+0%
+1'
+b0000 *
+0+
 #160000000
 0!
-0&
+0'
 #170000000
 1!
-1&
+1'
 #180000000
 0!
-0&
+0'
 #190000000
 1!
-1&
+1'
 #200000000
 0!
-0&
+0'
 #210000000
 1!
-1&
+1'
 #220000000
 0!
-0&
+0'
 #230000000
 1!
-1&
+1'
 #240000000
 0!
-0&
+0'
 #250000000
 1!
-1&
+1'
