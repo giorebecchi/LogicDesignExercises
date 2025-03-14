@@ -11,6 +11,6 @@ file . "recognizer.vhd" "4bd3b680cca399d5b61fe0e2ba8bb1e82500356f" "202503131836
 file . "recognizer_tb.vhd" "ba8acbc4f4e188d27db81661cf063dc380ce4850" "20250313183632.851":
   entity recognizer_tb at 1( 0) + 0 on 13;
   architecture simple of recognizer_tb at 7( 94) + 0 on 14;
-file . "top.vhd" "60da2514b5c759f33872a65340eaa2d5107d8d90" "20250313184502.774":
-  entity top at 1( 0) + 0 on 17;
-  architecture structural of top at 14( 349) + 0 on 18;
+file . "top.vhd" "fadf20b773a2145104dcbfcd7d9d9381a3109414" "20250314075009.118":
+  entity top at 22( 482) + 0 on 23;
+  architecture behavioral of top at 44( 1036) + 0 on 24;
