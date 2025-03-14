@@ -1,0 +1,19 @@
+v 4
+file . "test_top.vhd" "7c8131227d6930e6ee109ef5a5313484e9af3c2f" "20250314075720.558":
+  entity test_top at 22( 466) + 0 on 21;
+  architecture behavioral of test_top at 38( 850) + 0 on 22;
+file . "test_recognizer.vhd" "3770c23a2a32da64de4e0fd995f79782dbd8f4e2" "20250314075720.431":
+  entity test_recognizer at 2( 23) + 0 on 17;
+  architecture behavioral of test_recognizer at 7( 106) + 0 on 18;
+file . "serializer.vhd" "c67549a15946c5dad1b950e60e555f8f910642d3" "20250314075619.980":
+  entity serializer at 2( 14) + 0 on 13;
+  architecture behavioral of serializer at 16( 432) + 0 on 14;
+file . "recognizer.vhd" "69f359159437649ba0b8e71c257917d613ac57fa" "20250314075619.925":
+  entity recognizer at 2( 23) + 0 on 11;
+  architecture behavioral of recognizer at 15( 347) + 0 on 12;
+file . "top.vhd" "e433e1d5e52fa7876bdd17f6c64116cf24ad3715" "20250314075620.043":
+  entity top at 22( 461) + 0 on 15;
+  architecture behavioral of top at 44( 991) + 0 on 16;
+file . "test_serializer.vhd" "b848c334ef3cbfc5ed581b94bf8aa39334dae56f" "20250314075720.498":
+  entity test_serializer at 1( 0) + 0 on 19;
+  architecture behavioral of test_serializer at 6( 83) + 0 on 20;
